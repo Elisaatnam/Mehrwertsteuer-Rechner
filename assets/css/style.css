@@ -1,0 +1,81 @@
+@font-face {
+	font-family: Neucha;
+	src: url(../fonts/Neucha-Regular.ttf);
+}
+
+:root {
+	--mb1: 1vh;
+	--mb2: 4vh;
+}
+
+/* GLOBAL SETTINGS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: Neucha, sans-serif;
+}
+
+h1 {
+	font-size: 3vw;
+}
+
+h2 {
+	font-size: 1.6vw;
+	margin-bottom: var(--mb1);
+}
+
+h3 {
+	font-size: 1.4vw;
+	margin-bottom: var(--mb2);
+}
+
+p {
+	font-size: 1.8vw;
+	font-weight: 700;
+	margin-bottom: var(--mb2);
+}
+
+input,
+label {
+	font-size: 1.2vw;
+	margin-bottom: var(--mb2);
+}
+input:first-of-type,
+label:first-of-type {
+	margin-bottom: var(--mb1);
+}
+
+input[type="submit"] {
+	display: block;
+	width: 100%;
+	padding: 0.5vh 0;
+	background-color: cadetblue;
+	color: white;
+	text-shadow: 2px 2px gray;
+	border: none;
+	transition: background-color 0.5s ease-in-out;
+	transition: transform 0.5s ease-in-out;
+}
+
+input[type="submit"]:hover {
+	cursor: pointer;
+	background-color: steelblue;
+	transform: scale(1.025);
+}
+/* MAIN */
+main {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10vh 0;
+}
+
+fieldset {
+	width: 40vw;
+	padding: 20px;
+}
